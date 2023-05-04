@@ -44,4 +44,7 @@ sudo iptables -t nat -I PREROUTING -p tcp --dport 22323 -i "$interface_name" -j 
 
 ############################# unzip rootfs.ext2.gz
 
+python3 join.py
+sleep 3
+
 #gunzip /local/repository/qemu-images/rootfs.ext2.gz
